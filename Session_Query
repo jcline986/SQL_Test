@@ -1,0 +1,4 @@
+select *
+from session s
+where s.ts::date = '2021-11-12'
+and s.bfid = '1422141'
