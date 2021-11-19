@@ -1,4 +1,6 @@
 select *
 from session s
+inner join economy e
+on e.server_sid = s.server_sid
 where s.ts::date = '2021-11-12'
 and s.bfid = '1422141'
